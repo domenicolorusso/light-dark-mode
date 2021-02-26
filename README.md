@@ -28,18 +28,18 @@ Essendo un frontender, ho deciso anche di utilizzare ciò che il browser mette a
 
  
 
-1. dati 
+### dati 
 
 Ho pensato a che tipo di dato utilizzare per salvare le interazioni dell’utente e la scelta è ricaduta su un array di oggetti, che mi avrebbe permesso di utilizzare i metodi tipici degli array per manipolare i dati. In questa maniera abbiamo una “fotografia” di ogni istante di interazione, utile anche per uno sviluppo di funzionalità aggiuntive tra le quali la scelta, da parte dell’utente, di un momento specifico dello stato dell’app e quindi la possibile visualizzazione dei dati. 
 
-2. funzionalità  
+### funzionalità  
 
 Non sapendo quale potesse essere una deadline adeguata per lo sviluppo dell’app ho optato per l’aggiunta di 3 funzionalità, l’app potrebbe comunque essere estesa ulteriormente. 
 
 L’utente ha la possibilità di vedere quante volte ha cliccato sullo switch, lo stato precedente, quindi se Dark Mode o Light Mode e la media di click tra Light e Dark. 
  
 
-3.  switch 
+###  switch 
 
 Ogni volta che l’utente preme lo switch, chiama una callback anonima. 
 
@@ -61,7 +61,7 @@ viene aggiornato il Local Storage
 
  
 
-4. clear state 
+### clear state 
 
 Ogni volta che l’utente preme il bottone clear state, chiama una callback anonima. 
 
@@ -77,7 +77,7 @@ Mostro in howManyTimes il nuovo valore (sarà sempre 0)
 
 Mostro in averageValueField il nuovo valore (sarà sempre 0) 
 
-5. handleMounted 
+### handleMounted 
 
 Quando la pagina viene caricata la prima volta e solo la prima volta si chiama la funzione handleMounted che permette di memorizzare i dati dal Local Storage allo state: 
 
@@ -91,7 +91,7 @@ Il nuovo state viene assegnato allo state dell’app
 
 Si aggiornano i dati che devono essere renderizzati 
 
-6. showStats 
+### showStats 
 
 Quando l’utente preme su showStats viene chiamata la funzione showHideStats. 
 
