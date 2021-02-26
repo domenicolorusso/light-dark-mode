@@ -1,26 +1,140 @@
-*{
-    margin: 0;
-    padding: 0;
-    font-size: 16px;
+* {
+  margin: 0;
+  padding: 0;
 }
-.appWrapper{
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: rgb(52, 88, 165);
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
 }
-.btnToggle{
-    
-    padding: 30px 40px;
-    border: 1px solid black;
-    border-radius: 10px;
+h2 {
+  font-weight: 100;
+  color: rgb(16, 16, 16);
 }
-.btnToggle:focus{
-    outline: none;
+h1 {
+  color: rgb(16, 16, 16);
+  padding-top: 5vh;
+  font-weight: 700;
+  font-size: 50px;
+  text-align: center;
+}
+.addLightText {
+  color: rgb(225, 225, 225);
+}
+.appWrapper {
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(220, 220, 220);
+}
+.wrapButton {
+  margin-top: 20vh;
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
 }
 
-.addDark{
-    background-color: rgb(16, 16, 16);
+/* --------------------------------normal button  ---------------------------------*/
+button {
+  color: rgb(175, 174, 174);
+  font-size: 16px;
+  border: none;
+  margin-top: 10px;
+  cursor: pointer;
+  width: 9rem;
+  height: 4rem;
+  border-radius: 20px;
+  box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.2),
+    -10px -10px 20px 0px rgba(255, 255, 255, 2);
+}
+button:hover {
+  box-shadow: inset 10px 10px 20px 0px rgba(0, 0, 0, 0.2),
+    inset -10px -10px 20px 0px rgba(255, 255, 255, 2);
+}
+button:focus {
+  outline: none;
+}
+button:active {
+  box-shadow: inset 1px 1px 2px #babecc, inset -1px -1px 2px #fff;
+}
+
+.addDark {
+  background-color: rgb(16, 16, 16);
+}
+
+/* -------------------------dark button ------------------------------*/
+.addDarkButton {
+  background-color: rgba(0, 0, 0, 0.205);
+  box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.2),
+    -10px -10px 20px 0px rgba(116, 116, 116, 0.103);
+}
+
+.addDarkButton:hover {
+  box-shadow: inset 10px 10px 20px 0px rgba(0, 0, 0, 0.2),
+    inset -10px -10px 20px 0px rgba(173, 173, 173, 0.103);
+}
+
+.addDarkButton:active {
+  box-shadow: inset 1px 1px 2px #4141418c,
+    inset -1px -1px 2px rgba(255, 255, 255, 0.212);
+}
+
+/* -----------------------------checkbox --------------------------*/
+
+input[type="checkbox"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  -webkit-tap-highlight-color: transparent;
+  cursor: pointer;
+}
+input[type="checkbox"]:focus {
+  outline: 0;
+}
+
+.toggle {
+  height: 32px;
+  width: 100px;
+  border-radius: 16px;
+  display: inline-block;
+  position: relative;
+  margin: 0;
+  border: 2px solid #b0b0ff;
+  background: linear-gradient(180deg, #2d2f39 0%, #1f2027 100%);
+  transition: all 0.2s ease;
+}
+.toggle:after {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: white;
+  box-shadow: 0 1px 2px rgba(44, 44, 44, 0.2);
+  transition: all 0.2s cubic-bezier(0.5, 0.1, 0.75, 1.35);
+}
+.toggle:checked {
+  border-color: #298fe8;
+}
+.toggle:checked:after {
+  transform: translatex(68px);
+}
+
+/* -----------------------------stats --------------------------*/
+
+.statsWrapper {
+  width: 50vh;
+  height: 20vh;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 1px rgba(128, 128, 128, 0.247) solid;
+  border-radius: 20px;
+}
+
+.visible {
+  display: flex;
 }
