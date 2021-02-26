@@ -1,8 +1,8 @@
-#LIGHT & DARK MODE 
+# LIGHT & DARK MODE 
 
  
 
-User Interface 
+## User Interface 
 
 La commessa richiedeva la creazione di un app abbastanza semplice nel suo sviluppo, in virtù di questo ho deciso di optare per un design minimal ed elegante, utilizzando sfumature del nero e del bianco, ammiccando ad Apple. 
 
@@ -16,7 +16,7 @@ Per una maggiore interazione ho creato un pulsante che apre e chiude la sezione 
 
  
 
-Scelta delle tecnologie 
+## Scelta delle tecnologie 
 
 Ho scelto di non usare alcun tipo di framework, quindi il progetto è  stato sviluppato interamente in HTML, CSS, Javascript Vanilla. 
 
@@ -24,7 +24,7 @@ Essendo un frontender, ho deciso anche di utilizzare ciò che il browser mette a
 
  
 
-Sviluppo 
+## Sviluppo 
 
  
 
